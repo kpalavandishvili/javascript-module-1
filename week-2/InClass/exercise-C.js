@@ -9,3 +9,5 @@ function numberChecker(num) {
     return `${num} isn't even a number :(`;
   }
 }
+const num = 23;
+console.log(numberChecker(num));
