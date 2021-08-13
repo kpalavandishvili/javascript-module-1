@@ -8,6 +8,24 @@
 */
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// const multyNumbers = numbers.map(number => number * 100)
+
+const printFizz = number => number % 3 === 0;
+const printBuzz = number => number % 5 === 0;
+const printFizzBuzz = number => printFizz(number) && printBuzz(number);
+
+arr.forEach(each => {
+  if (printFizzBuzz(each)) {
+    console.log("FizzBuzz");
+
+  } else if (printBuzz(each)) {
+    console.log("Fizz");
+  } else if (printFizz(each)) {
+    console.log("Buzz");
+  } else {
+    console.log(each);
+  }
+})
 
 /* EXPECTED OUTPUT */
 
